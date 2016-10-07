@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package responseUpcase;
+
+service ConvertToUpcase {
+	rpc convertToUpcase (Request) returns (Response) {}
+}
+
+message Request {
+	string word = 1;
+}
+
+message Response {
+	string result = 1;
+}
